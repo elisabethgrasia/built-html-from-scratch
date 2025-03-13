@@ -2,187 +2,86 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="description" content="Elisabeth Grasia Putri's Portofolio">
+        <meta charset="utf-8"  />
+    <meta name="description" content="Learn how to build a website from scratch">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Web development">
+  <meta name="author" content="Elisabeth Grasia Putri">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Elisabeth Grasia Putri| Portofolio </title>
+
+    <title>Elisabeth Grasia Putri| Portofolio </title>
         <style>
-            * {
-                padding: 0px;
-                margin: 0px;
-                box-sizing: border-box;
-            }
-            #name {
-                text-align: center;
-                font-size: 32px;
-                color: rgb(125, 63, 192);
-                text-transform: uppercase;
+        body {
+            background: linear-gradient(to bottom, #3c63ee, #f8c7a2); /* Smooth color transition */
+            font-family: Arial, sans-serif; /* Use Arial font */}
+
+            .container {
+            display: flex;
+            gap: 20px; /* Space between image and text */
+            max-width: 600px;
+            text-align: center;
+            margin: auto;
             }
 
-            #title {
-                display: block;
-                text-align: center;
-            }
-
-            .box {
-                display: inline-block;
-                width: 150px;
-                height: 150px;
-                text-align: center;
-                font-size: 66px;
-                line-height: 150px;
-                border-radius: 50%;
-                font-weight: 900px;
-                color:rgb(57,52,52)
-            }
-
-            #box-1 {
-                background-color: green;
-            }
-
-            #box-2 {
-                background-color: yellow;
-            }
-
-            #box-3 {
-                background-color: red;
-            }
-
-            #id {
-                color: red;
-            }
-
-            nav {
-                margin: 50px;
-                border: 5px dashed red;
-            }
-            ul {
-                border: 5px solid blue;
-                margin: 25px auto;
-                padding: 25px;
-                border: 2px solid black;
-            }
-
-            ul li {
-                display: inline-block;
-                border: 5px solid green;
-            }
-            span {
-                display: inline-block;
-                border: 5px solid yellow;
-                margin: 5px;
-                text-align: center;
-                line-height: 100px;
-            }
-            div {
-                display: inline-block;
-                border: 5px solid red;
-                margin: 5px;
-                text-align: center;
-                padding: 25px;
-                height: 100px;
-                width: 100px;
-                padding: 25px;
-
-            }
-
-            ul li a{
-                display: inline-block;
-                border: 2px solid black;
-                width: 100px;
-            }   
-
-            ul li {
-                border: 2px solid green;
-                border-radius: 3px;
-                padding: 10px 5px;
-                display: inline-block;
-            }
-
-            section{
-                width: 75%;
-                margin: 25px auto;
-                padding: 25px;
-                border: 2px dashed black;
-            }
-        
-            footer {
-                text-align: center;
-                padding: 25px;
-                border: 2px solid black;
+            .container img {
+            width: 150px; /* Adjust image size */
+            height: auto;
+            border-radius: 50px; 
             }
             
-            #about img{
-                border-radius: 50%;
-                width: 100px;
-                display: block;
-                
+            .top-left-image {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: auto;
+                   }
+
+            .details {
+            flex: 1; 
+            }
+            
+            .contact {
+            margin-top: 20px;
+            padding: 20px;
+            max-width: 600px;
+            text-align: center;
+            margin-top: 20px;
             }
 
-            #social-links a:hover{
-                display: inline-block;
-                border: 2px solid black;
-                padding: 10px;
-                margin: 5px;
-                text-decoration: none;
-                color: black;
-            }
+            
         </style>
     </head>
     <body>
-        <span> Span Item</span>
-        <span> testing </span>
-        <div> Div Item</div>
-        <div> testing </div>
-
-        <header>
-            <div>
-                <h1 id="name">Elisabeth Grasia Putri</h1>
-                <small id=""title">Bioinformatician </small>
-                <span>elisabethgp13@gmail.com</span>
-                <span>+358442470052</span>
-
-                <div class="box" id="box-1">
-                    item 1
-                </div>
-                
-                <div class="box" id="box-2">
-                    item 2
-                </div>
-                
-                <div class="box" id="box-3">
-                    item 3
-                </div>
-
-                
-                <div>
-                    <a href="https://www.linkedin.com/in/elisabethgrasia/" target="_blank">LinkedIn</a>
-                    |<a href="https://github.com/elisabethgrasia" target="_blank">GitHub</a> |
-                    <a href="https://www.instagram.com/elisabethgrasia/" target="_blank">Instagram</a>
-                </div>
-
+        <div class="container">
+            <img src="unformal photo.jpg" alt="Image"class="top-left-image">
+            <div class="details">
+                <h1>Elisabeth Grasia Putri</h1>
+                <p>Bioinformatician </p>
+                <span>elisabethgp13@gmail.com</span> |
+                <span>+358442470052</span> |
+                <span>Helsinki, Finland</span>
+                <p>
+                <a href="https://www.linkedin.com/in/elisabethgrasia/" target="_blank">LinkedIn</a>
+            |<a href="https://github.com/elisabethgrasia" target="_blank">GitHub</a> |
+            <a href="https://www.instagram.com/elisabethgrasia/" target="_blank">Instagram</a>
+                </p>
             </div>
-        </header>
+        </div>
+        
 
-        <main>
-            <section>
-                <h2>About Me</h2>
-                <p>Hi, I am Elisabeth Grasia Putri. I am a bioinformatician. I am interested in data analysis, machine learning, and web development. I have a master's degree in bioinformatics from the University of Turku. I have experience in analyzing biological data using R and Python. I am currently learning web development to build a website for my bioinformatics projects.</p>    
-            </section>
+        <div class="contact">
+            
+        </div>
 
-            <section>
-                <h2>Skills</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>R</li>
-                    <li>Machine Learning</li>
-                    <li>Web Development</li>
-                </ul>
-            </section>
-            </main>
+        <div class="about">
+            <h2>About Me</h2>
+            <p>Hi, I am Elisabeth Grasia Putri. I am a bioinformatician with a passion for data analysis and visualization. I have experience in analyzing large datasets and creating interactive visualizations. I am proficient in programming languages such as Python, R, and JavaScript. I am currently looking for new opportunities to work on exciting projects and collaborate with other data enthusiasts. </p>
+        </div>
 
+        
+
+    
             <footer>
                 <p>&copy; 2025 Elisabeth Grasia Putri</p>
             </footer>
